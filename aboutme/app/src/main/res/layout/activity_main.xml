@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable
+        name="myName"
+        type="com.example.aboutme.MyName"/>
+</data>
+<LinearLayout
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{myName.name}"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/nickNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="what is your name"
+            android:inputType="textImeMultiLine|textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Done" />
+
+        <TextView
+            android:id="@+id/nickName_text"
+            android:text="@{myName.nickname}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="yellow star" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bioText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/description"
+                android:textSize="24sp" />
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>
+
+
