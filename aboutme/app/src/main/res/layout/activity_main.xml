@@ -19,6 +19,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{myName.name}"
+            android:fontFamily="sans-serif"
+            android:textSize="24sp"
+
+            android:textColor="@color/green"
             android:textAlignment="center" />
 
         <EditText
@@ -45,6 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
             android:visibility="gone" />
 
         <ImageView
