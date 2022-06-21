@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun addNickname(view: View){
-
        binding.apply {
            myName?.nickname=nickNameEdit.text.toString()
            invalidateAll()//for to refresh the UI
@@ -33,8 +32,5 @@ class MainActivity : AppCompatActivity() {
            nickNameText.visibility=View.VISIBLE
            doneButton.visibility=View.GONE
        }
-
-
-
     }
 }
